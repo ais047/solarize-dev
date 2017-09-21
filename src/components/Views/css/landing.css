@@ -64,7 +64,7 @@ p.title {
     border: 2px solid #fff;
     padding: 10px 20px;
     height: 45px;
-    border-radius;
+    border-radius: 5px;
 }
 
 .hero-body {
@@ -87,7 +87,7 @@ p.title {
 }
 .footer {
   background-color: none;
-  color: ivory
+  color: ivory;
   font-size: 18px;
   font-weight: 300;
 }

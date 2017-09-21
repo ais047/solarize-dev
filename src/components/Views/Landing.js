@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import userArray from './js/user.js'
+// import { Link } from 'react-router-dom';
+// import "./css/landing"
 
 class Landing extends Component {
   render() {
@@ -58,31 +58,31 @@ class Landing extends Component {
                           <input type="hidden" name="oid" value="00D80000000dNiA"></input>
                           <input type="hidden" name="retURL" value="#"></input>
                           <div>
-                            <input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="First Name" required=""></input>
+                            <input id="first_name" maxLength="40" name="first_name" size="20" type="text" placeholder="First Name" required=""></input>
                           </div>
                           <div>
-                            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Last Name" required=""></input>
+                            <input id="last_name" maxLength="80" name="last_name" size="20" type="text" placeholder="Last Name" required=""></input>
                           </div>
                           <div>
-                            <input id="email" maxlength="80" name="email" size="20" type="email" placeholder="Email Address" required=""></input>
+                            <input id="email" maxLength="80" name="email" size="20" type="email" placeholder="Email Address" required=""></input>
                           </div>
                           <div>
-                            <input id="phone" maxlength="15" name="phone" size="20" type="tel" placeholder="Phone" required=""></input>
+                            <input id="phone" maxLength="15" name="phone" size="20" type="tel" placeholder="Phone" required=""></input>
                           </div>
                           <div>
                             <input name="street" size="20" placeholder="Street Address"></input>
                           </div>
                           <div>
                             <div className="tier">
-                              <input id="city" maxlength="40" name="city" size="20" type="text" placeholder="City"></input>
+                              <input id="city" maxLength="40" name="city" size="20" type="text" placeholder="City"></input>
                             </div>
                             <div>
                               <div className="tier">
-                                <input id="state" maxlength="2" name="city" size="20" type="text" placeholder="State"></input>
+                                <input id="state" maxLength="2" name="city" size="20" type="text" placeholder="State"></input>
                               </div>
                             </div> 
                             <div className="tier">
-                              <input id="zip" maxlength="5" name="zip" size="20" type="text" placeholder="Zip"></input>
+                              <input id="zip" maxLength="5" name="zip" size="20" type="text" placeholder="Zip"></input>
                             </div>
                           </div>
                           <div>
@@ -153,7 +153,7 @@ class Landing extends Component {
               <div className="container">
                 <div className="content has-text-centered">
                   <p><strong>Solarize &copy 2017</strong></p>
-                  <p><a className="icon" href="#"><i className="fa fa-github"></i></a></p>
+                  <p><a className="icon" href=""><i className="fa fa-github"></i></a></p>
                 </div>
               </div>
           </footer>

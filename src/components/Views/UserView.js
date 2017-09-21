@@ -1,7 +1,6 @@
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import userArray from './js/user.js'
+// import leadArray from './js/leadTable.js'
 
 // Create the Main component
 class UserView extends Component {
@@ -121,6 +120,7 @@ class UserView extends Component {
             </section>
           </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
       </div>
     )
   }

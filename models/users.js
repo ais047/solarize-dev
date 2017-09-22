@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 // const db = require('./index.js');
 
 module.exports = function(sequelize, DataTypes) {
-  const User = sequelize.define('user', {
+  const User = sequelize.define('User', {
     user_name: {
       type: Sequelize.STRING,
       allowNull: false

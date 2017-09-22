@@ -5,7 +5,7 @@ const Sequelize = require('sequelize');
 
 module.exports = function(sequelize, DataTypes) {
 
-  const Lead = sequelize.define('lead', {
+  const Lead = sequelize.define('Lead', {
     first_name: {
       type: Sequelize.STRING,
       allowNull: false
@@ -19,7 +19,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     phone: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.STRING,
       allowNull: false
     },
     contacted: {

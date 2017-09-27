@@ -1,4 +1,5 @@
 import $ from "jquery"
+import bcrypt from "bcrypt";
 
 const helpers = {
   openModal: function() {
@@ -38,16 +39,21 @@ const helpers = {
 
   submitUserForm: function() {
     console.log("clicked");
-
+  
+    let salt = bcrypt.genSaltSync(10);
+    let password = $(#inputPassword).val().trim();
+    let hashedPassword = bcrypt.hashSync(password, salt);
+    
     let newUser = {
       user_name: $("#inputUsername").val().trim(),
-      user_password: $("#inputPassword").val().trim(),
-      salt: "456789",
+      user_password: hashedPassword,
+      salt: salt,
       company_name: $("#inputCompany").val().trim(),
       email: $("#inputEmail").val().trim(),
       phone: $("#inputPhone").val().trim(),
       state: $("#inputState").val().trim(),
     };
+  
     console.log(newUser);
 
     $.post("/api/user", newUser)

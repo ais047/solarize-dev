@@ -41,7 +41,7 @@ const helpers = {
     console.log("clicked");
   
     let salt = bcrypt.genSaltSync(10);
-    let password = $(#inputPassword).val().trim();
+    let password = $("#inputPassword").val().trim();
     let hashedPassword = bcrypt.hashSync(password, salt);
     
     let newUser = {
